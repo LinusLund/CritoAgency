@@ -1,0 +1,20 @@
+﻿@using CritoAgency.Models;
+@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Contacts>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    Layout = "_layout.cshtml";
+    
+}
+
+<header>
+ 
+ @await Html.PartialAsync("_breadcrumbPartial")
+    
+</header>
+
+<main>
+
+@await Html.PartialAsync("_contactFormPartial")    
+
+</main>
